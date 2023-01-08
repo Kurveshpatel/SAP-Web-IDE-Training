@@ -1,0 +1,41 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" 
+controllerName="demozfirst.controller.View1" displayBlock="true" >
+	<App>
+		<pages class="sapUiBody"><Page title="{i18n>title}">
+				<content>
+					<VBox>
+				<Text text="Image:" class="sapUiSmallMarginBottom" />
+				<Image src="{img>/product/1}" width="{/imageWidth}" />
+			</VBox>
+			<Label text="Simple DateTimePicker" labelFor="DTP1"/>
+		<DateTimePicker
+			id="DTP1"
+		
+			placeholder="Enter Date"
+			change="handleChange"
+			class="sapUiSmallMarginBottom"/>
+					<!--<h1>Hello How Are You?</h1>-->
+					<Label class="l" text="Hello How Are you?"></Label>
+					<form:SimpleForm>
+						<form:content>
+							
+							<Label text="Name"></Label>
+							<Input id="name" value="{/empData/empName}" />
+							<Label text="Password"/>
+							<Input id="pwd"  value="{/empData/empSal}"/>
+							
+						</form:content>
+					
+					<Button id="btn" press="onBtnClick" text="Submit" activeIcon="sap-icon://accept"/>
+					</form:SimpleForm>
+					
+					<Link class="link" text="Open SAP Homepage" target="_blank" href="http://www.sap.com" />
+					<Text text=" \n\n\n "/>
+					<Link class="link" text="Linkedln" target="_blank" href="https://www.linkedin.com/in/kurvesh-patel-9988871b3/" />
+					<Link class="link" text="GitHub" target="_blank" href="https://github.com/PatelKurvesh?tab=repositories" />
+					<Link class="link" text="Google" target="_blank" href="http://www.google.com" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
